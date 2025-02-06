@@ -12,7 +12,7 @@ const todoUpdatedSchema = zod.object({
 
 
 
-module.exports({
+module.exports = {
     todoSchema : todoSchema,
     todoUpdatedSchema : todoUpdatedSchema
-})
+}
