@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const {todoSchema , todoUpdatedSchema} = require("./types.js");
 const {todoInteractor} = require("./db.js");
 const app = express();
@@ -6,6 +7,7 @@ const port = 3000;
 
 
 app.use(express.json());
+app.use(cors());
 
 
 app.get("/todos" , async (req,res)=>{

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://admin:mhXcgRoRq36NTWo5@cluster0.0jcbl.mongodb.net/SelfTodoDataBase");
+mongoose.connect(""); // enter the mongodb connection url to run
 
 const todoSchemas = mongoose.Schema({
     title : String , 
